@@ -38,7 +38,7 @@
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -78,12 +78,168 @@
         <figcaption>
             Примеры хорошего освещения при фотографировании
         </figcaption>
+    </figure>
 
 </body>
-</html>
+</html> -->
 
 
 
 
 
 
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture</title>
+</head>
+<body> -->
+    
+    <!-- <picture>
+        <source
+            srcset="
+                img/img_5.jpg 178w,
+                img/img_10.jpg 356w,
+                img/img_25.jpg 891w,
+                img/img_50.jpg 1783w,
+                img/img_100.jpg 3566w
+            "
+            sizes="
+                (min-width: 1280px) 1200px,
+                (min-width: 768px) 400px,
+                100vw
+            "
+        >
+        <img src="img/img_50.jpg" alt="girl">
+    </picture> -->
+
+
+
+    <!-- <picture>
+        <source media="(orientation: landscape)"
+            srcset="
+                img/img_5.jpg 178w,
+                img/img_10.jpg 356w,
+                img/img_25.jpg 891w,
+                img/img_50.jpg 1783w,
+                img/img_100.jpg 3566w
+            "
+            sizes="
+                (min-width: 700px) 500px,
+                (min-width: 600px) 400px,
+                100vw
+            "
+        >
+        <source media="(orientation: portrait)"
+            srcset="
+                img/img_5.jpg 178w,
+                img/img_10.jpg 356w,
+                img/img_25.jpg 891w,
+                img/img_50.jpg 1783w,
+                img/img_100.jpg 3566w
+            "
+            sizes="
+                (min-width: 1024px) 600px,
+                (min-width: 768px) 700px,
+                500px
+            "
+        >
+        <img src="img/img_50.jpg" alt="girl">
+    </picture> -->
+
+
+    <!-- <picture>
+        <source srcset="pic.avif" type="image/avif">
+        <source srcset="pic.webp" type="image/webp">
+        <img src="pic.png" alt=".......">
+    </picture> -->
+
+
+<!-- </body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .icon {
+            display: block;
+            width: 150px;
+            height: 150px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+        .google {
+            background-image: url('img/svg/snow.svg');
+        }
+        .snow-wrapper {
+            width: 100px;
+            height: 100px;
+        }
+        .snow-animated {
+            animation: animation 1s infinite alternate;
+        }
+        @keyframes animation {
+            from {
+                stroke: blue;
+                stroke-width: 3;
+            }
+            to {
+                stroke: red;
+                stroke-width: 5px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <img src="img/svg/snow.svg" alt="">
+
+    <a href="https://google.com" class="icon google"></a>
+
+    <div class="snow-wrapper">
+        <svg 
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            class="snow-animated"
+        >
+            <path d="M12 3V21M9.99995 4L12 6L14 4M9.99995 20L12 18L14 20M4.23218 7.5L19.8206 16.5M4.11133 9.50885L6.57017 8.85L5.91133 6.39115M18.141 17.6089L17.4821 15.15L19.941 14.4912M19.8205 7.5L4.232 16.5M18.1413 6.39115L17.4825 8.85L19.9413 9.50885M4.11166 14.4911L6.57051 15.15L5.91166 17.6088" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <map name="girl_map">
+        <area target="_blank" alt="" title="" href="https://google.com" coords="2716,2202,1388,1409" shape="rect">
+        <area target="_blank" alt="" title="" href="https://wikipedia.org" coords="944,3187,2055,3728" shape="rect">
+        <img src="img/img_100.jpg" alt="girl" usemap="#girl_map">
+    </map>
+
+</body>
+</html> -->

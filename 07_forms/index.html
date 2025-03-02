@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <form 
+        action="handler.php"
+        method="post"
+    >
+
+        <input type="text" name="email">
+        <input type="text" name="password">
+
+        <button type="submit">OK</button>
+
+    </form>
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form 
+        action="handler.php"
+        method="post"
+        name="frm_main"
+        novalidate
+        autocomplete="off"
+        accept-charset="UTF-8"
+        enctype="application/x-www-form-urlencoded"
+    >
+
+        <textarea name="bio" id="txa_bio" cols="20" rows="5"></textarea>
+
+
+        <button type="button" >BUTTON</button>
+        <button type="reset" >RESET</button>
+        <button type="submit">SUBMIT</button>
+
+        <label for="txt_username">Username</label>
+        <input type="text" name="username" id="txt_username">
+
+        <label for="sel_language">Language</label>
+        <select name="language" id="sel_language">
+            <option value="cs">C#</option>
+            <option value="cpp">C++</option>
+            <option value="php">PHP</option>
+        </select>
+
+    </form>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    
+    <form class="form" action="handler.php" method="post">
+        <h2 class="title">Welcome</h2>
+
+        <div class="input-container ic1">
+            <input type="text" name="firstname" id="firstname" class="input" placeholder=" ">
+            <div class="cut"></div>
+            <label for="firstname" class="placeholder">First name</label>
+        </div>
+
+        <div class="input-container ic2">
+            <input type="text" name="lastname" id="lastname" class="input" placeholder=" ">
+            <div class="cut"></div>
+            <label for="lastname" class="placeholder">Last name</label>
+        </div>
+
+        <div class="input-container ic2">
+            <input type="email" name="email" id="email" class="input" placeholder=" ">
+            <div class="cut cut-short"></div>
+            <label for="email" class="placeholder">Email</label>
+        </div>
+
+        <div class="input-container ic2">
+            <textarea id="description" class="input" name="description" spellcheck="false"></textarea>
+            <div class="cut"></div>
+            <label for="description" class="placeholder">Description</label>
+        </div>
+
+        <div class="input-container ic2">
+            <button type="submit" class="submit">SUBMIT</button>
+        </div>
+
+
+    </form>
+
+</body>
+</html>
+
+
