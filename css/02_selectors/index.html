@@ -1,0 +1,483 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Универсальный */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum iusto aliquam nobis, officiis ut id libero fugiat unde esse cum beatae hic impedit, laudantium porro magni possimus rerum assumenda maiores!</p>
+
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        Классы
+        p {
+            text-align: center;
+        }
+        p.help {
+            color: blue;
+            margin-left: 20px;
+            border-left: 5px solid red;
+            padding-left: 15px;
+        }
+        .help {
+            background-color: lightgreen;
+        }
+        .help {
+            background-color: lightcoral;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="help">Lorem ipsum dolor sit amet.</p>
+    <div class="help">Lorem ipsum dolor sit amet.</div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* Мультикласс */
+        .tag.level-1 {
+            font-size: 3rem;
+        }
+
+        a.tag {
+            color: brown;
+        }
+
+        .level-2 {
+            background-color: lightsalmon;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div>
+        <a class="tag level-1" href="#1">Link 1</a>
+        <a class="tag level-2" href="#2">Link 2</a>
+    </div>
+    
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* id */
+
+        #help {
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            width: 100px;
+            padding: 10px;
+            background: lightgrey;
+        }
+        div {
+            color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="help">Lorem ipsum dolor sit amet.</div>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Pariatur neque numquam cumque cupiditate.</p>
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* По тэгу */
+
+        p {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+    <div>Lorem ipsum dolor sit amet.</div>
+    <p>Recusandae officia atque cupiditate consequuntur.</p>
+    
+</body>
+</html> -->
+
+
+
+
+<!-- ========== КОМБИНАЦИИ ============ -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Объединение нескольких селекторов */
+
+        h2, li {
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div>Lorem ipsum dolor sit amet.</div>
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Adipisci, in commodi!</li>
+        <li>Distinctio, delectus sapiente.</li>
+    </ul>
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Вложенные (рассматриваются ПОТОМКИ)*/
+        /* s1 s2 {...} */
+
+        p b {
+            font-family: Times, serif;
+            font-weight: bold;
+            color: darkorange;
+        }
+
+        ul a {
+            color: red;
+        }
+
+        .list a {
+            color: green;
+        }
+
+        .list li a.bold {
+            color: violet;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+<div><strong>Lorem, ipsum dolor.</strong></div>
+<p><b>Lorem, ipsum dolor.</b></p>
+
+<a href="#">Link1</a>
+
+<ul>
+    <li><a href="#">Link2</a></li>
+    <li><a href="#">Link3</a></li>
+    <li><a href="#">Link4</a></li>
+</ul>
+
+<ul class="list">
+    <li><a href="#">Link5</a></li>
+    <li><a href="#">Link6</a></li>
+    <li><a class="bold" href="#">Link7</a></li>
+</ul>
+
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Вложенные (рассматриваются ДОЧЕРНИЕ)*/
+        .parent > li {
+            border: 1px solid red;
+        }
+
+        .child > li {
+            border: 1px solid blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <ul class="parent">
+        <li>
+            <ul class="child">
+                <li>Lorem, ipsum.</li>
+                <li>Ipsam, nobis.</li>
+            </ul>
+        </li>
+        <li>Laboriosam, unde corporis.</li>
+        <li>Quo, sequi id?</li>
+        <li>Corrupti, fugiat explicabo.</li>
+    </ul>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Сестринские справа */
+        /* s1 ~ s2 {...} */
+
+        h1 ~ p {
+            color: red;
+        }
+        div ~ p {
+            color: green;
+        }
+        .wrapper p ~ .one > p {
+            color: violet;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <p>Lorem, ipsum dolor.1</p>
+    <div>Lorem, ipsum.2</div>
+    <p>Earum, consectetur porro.3</p>
+    <p>Possimus, consectetur ut!4</p>
+
+    <div class="wrapper">
+        <h1> Lorem, ipsum.5</h1>
+        <p> Lorem, ipsum dolor.6</p>
+        <div class="one">
+            <p>Lorem, ipsum dolor.7</p>
+        </div>
+    </div>
+
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         /* Первый Сестринский справа */
+         b + i {
+            color: red;
+         }
+    </style>
+</head>
+<body>
+    
+    <p>Lorem <b>Vasia.</b>ipsum dolor, sit  <i>Petya.</i>amet <i>Kolya</i> consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur <i>Dima.</i> adipisicing elit.</p>
+
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- ========== СЕЛЕКТОРЫ АТРИБУТОВ ============ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* [<attr>] {...}*/
+        /* E[<attr>] {...}  */
+
+        q {
+            font-style: italic;
+        }
+        .wrapper q[title] {
+            color: red;
+        }
+        div[data-role] {
+            color: blue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrapper" data-role="admin">
+        <p>Lorem ipsum, <q title="title_1">Цитата 1</q> <q>Цитата 2</q> dolor sit amet consectetur adipisicing.</p>
+    </div>
+    
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* [attr="value"] */
+        /* E[attr="value"] */
+
+        p.wrapper a[target="_blank"] {
+            color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <p class="wrapper">
+        <a href="#">Link_1</a>
+        <a href="#" target="_blank">Link_2</a>
+    </p>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Значение атрибута начинается с... */
+        /* [attr^="val"] {...} */
+        /* E[attr^="val"] {...}*/
+
+        a[href^="https://"] {
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <a href="about.html">About</a>
+    <a href="https://google.com" target="_blank">GOOGLE</a>
+
+    <progress id="file" max="100" value="70">70%</progress>
+
+</body>
+</html>
