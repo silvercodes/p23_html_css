@@ -452,7 +452,7 @@
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -477,7 +477,134 @@
     <a href="about.html">About</a>
     <a href="https://google.com" target="_blank">GOOGLE</a>
 
-    <progress id="file" max="100" value="70">70%</progress>
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Значение атрибута заканчивается на... */
+        /* [attr$="val"] {...} */
+        /* E[attr$="val"] {...}*/
+
+        a[href$=".com"] {
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <a href="https://app1.com">First</a>
+    <a href="https://app2.net" target="_blank">Second</a>
+    <a href="https://app3.com">Third</a>
 
 </body>
-</html>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Значение атрибута содержит подстроку... */
+        /* [attr*="val"] {...} */
+        /* E[attr*="val"] {...}*/
+
+        a[href*="app.com"] {
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <a href="https://app.com/api">First</a>
+    <a href="https://web.net/api" target="_blank">Second</a>
+    <a href="https://app.com/docs">Third</a>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Значение атрибута содержит слово... */
+        /* [attr~="val"] {...} */
+        /* E[attr~="val"] {...}*/
+
+        div[class~="block"] {
+            color: green;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="block tag">
+        <h4>HEADER</h4>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Значение атрибута строго равно указанной строке или начинается с неё */
+        /* [attr|="val"] {...} */
+        /* E[attr|="val"] {...}*/
+
+        p[lang|="en"] {
+            color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <p lang="en-EN">1</p>
+    <p lang="fr-FR">2</p>
+    <p lang="ru-RU">3</p>
+
+</body>
+</html> -->

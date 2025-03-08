@@ -1,0 +1,367 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper {
+            color: red;
+        }
+        .signal {
+            font-weight: bold;
+        }
+        .wrapper:hover {
+            color: blue;
+            font-size: 2rem;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrapper signal">
+        Vasia
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- :checked -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        input[type="checkbox"]:checked + span {
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <input type="checkbox"><span>ch1</span>
+    <input type="checkbox"><span>ch2</span>
+    <input type="checkbox"><span>ch3</span>
+    <input type="checkbox"><span>ch4</span>
+    <input type="checkbox"><span>ch5</span>
+
+</body>
+</html> -->
+
+
+
+
+<!-- focus -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type="text"]:focus {
+            outline: 2px solid red;
+            outline-offset: 2px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button>BUTTON</button>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+    <input type="text">
+
+</body>
+</html> -->
+
+
+
+
+<!-- :hover -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .link {
+            color: black;
+            text-decoration-color: blue;
+            transition: background-color 1s linear;
+
+        }
+        .link:hover {
+            color: white;
+            background-color: blue;
+            transition: background-color 0.3s linear;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <ul>
+        <li><a href="#" class="link">One</a></li>
+        <li><a href="#" class="link">Two</a></li>
+        <li><a href="#" class="link">Three</a></li>
+    </ul>
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- :not -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .items > li:not(.last) {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <ul class="items">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Numquam, est sunt.</li>
+        <li class="last">Non, omnis fugit!</li>
+    </ul>
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- nth-child(...) / nth-last-child(...) -->
+ <!-- first-child / last-child -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* p:nth-child(3) {
+            color: red;
+        } */
+
+        /* p:nth-child(even) {
+            color: red;
+        } */
+
+        /* p:nth-child(odd) {
+            background-color: tomato;
+        } */
+        
+        /* p:nth-child(2n) {
+            background-color: tomato;
+        } */
+
+        /* p:nth-child(2n + 1) {
+            background-color: tomato;
+        } */
+
+        /* p:nth-last-child(2) {
+            background-color: tomato;
+        } */
+
+        /* p:last-child {
+            background-color: tomato;
+        } */
+
+        /* p:first-child {
+            background-color: tomato;
+        } */
+
+        /* 2 3 4 5 6 7... / 5 4 3 2 1 0 ... */
+        p:nth-child(n+2):nth-child(-n+5)  {
+            background-color: tomato;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <p>1 Lorem ipsum dolor sit amet.</p>
+        <p>2 Est sit voluptatem aut accusamus!</p>
+        <p>3 Rerum iste aliquid est tempore.</p>
+        <p>4 Hic beatae earum laboriosam deserunt.</p>
+        <p>5 Nemo, libero a. Dolores, veniam!</p>
+        <p>6 Ullam possimus natus libero impedit?</p>
+    </div>
+    
+</body>
+</html> -->
+
+
+
+
+<!-- nth-of-type / first-of-type / last-of-type -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        p:nth-of-type(odd) {
+            background-color: tomato;
+        }
+    </style>
+
+ </head>
+ <body>
+    
+    <h1>Lorem, ipsum dolor.</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Quis voluptatibus officiis maxime atque.</p>
+    <p>Excepturi minus iusto molestiae maiores.</p>
+
+ </body>
+ </html> -->
+
+
+
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Выбрать item_2 */
+
+        /* ul:first-of-type > li:nth-child(2) {
+            background-color: tomato;
+        } */
+
+        /* .wrapper > h3 + ul li:last-child {
+            background-color: tomato;
+        } */
+
+        /* .wrapper > ul:first-of-type li:nth-last-child(1) {
+            background-color: tomato;
+        } */
+
+    </style>
+
+ </head>
+ <body>
+    
+    <div class="wrapper">
+        <h3>lorem2</h3>
+        <ul>
+            <li>item_1</li>
+            <li>item_2</li>
+        </ul>
+        <ul>
+            <li>item_3</li>
+            <li>item_4</li>
+        </ul>
+    </div>
+
+ </body>
+ </html> -->
+
+
+
+
+
+
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Выбрать 2 через 2 */
+        /* ul > li:nth-child(4n+1), ul > li:nth-child(4n+2) {
+            background-color: tomato;
+        } */
+
+        /* Выбрать первые 10 */
+        /* ul > li:nth-child(-n+10){
+            background-color: tomato;
+        } */
+
+        /* Выбрать все после 10 */
+        /* ul > li:nth-child(n+11){
+            background-color: tomato;
+        } */
+
+        /* Выбрать последние 3 элемента */
+        /* ul > :nth-last-child(-n+3) {
+            background-color: tomato;
+        } */
+
+        /* Выбрать все элементы только если их всего 6 */
+        li:nth-last-child(6):first-child,
+        li:nth-last-child(6):first-child ~ li {
+            background-color: tomato;
+        }
+
+    </style>
+
+ </head>
+ <body>
+
+    <ul>
+        <li>1_item</li>
+        <li>2_item</li>
+        <li>3_item</li>
+        <li>4_item</li>
+        <li>5_item</li>
+        <li>6_item</li>
+    </ul>    
+ </body>
+ </html> -->
+
+
+
+
+
+
+
