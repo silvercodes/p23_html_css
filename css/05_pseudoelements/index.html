@@ -1,0 +1,160 @@
+<!-- ::after ::before -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .paragraph {
+            padding: 20px;
+            border: 4px solid red;
+        }
+
+        .paragraph::before {
+            content: "BEFORE";
+            color: red;
+        }
+        .paragraph::after {
+            content: "AFTER";
+            color: red;
+        }
+
+        @media print {
+                a::after {
+                content: ' -> ' attr(href);
+                color: red;
+            }
+        }
+
+        /* div::before {
+            content: url(cpp.jpg) ' + ' attr(data-count)
+        } */
+
+        div::before {
+            content: '';
+            background-image: url('cpp.jpg');
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, et!</p>
+
+    <a href="https://google.com">GOOGLE</a>
+
+    <div data-count="3">content</div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .header {
+            background: lightgray url('img_10.jpg') no-repeat center / cover;
+            position: relative;
+            height: 300px;
+            z-index: 0;
+        }
+        .header-text {
+            color: white;
+            font-size: 64px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0 0 0 / 0.5);
+            z-index: -1;
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class="header-text">Hello Vasia</h1>
+    </header>
+
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li::marker {
+            content: '🤪 ';
+        }
+    </style>
+
+</head>
+<body>
+    
+    <ul>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Totam quo qui reprehenderit praesentium?</li>
+        <li>Optio nobis porro veritatis iste?</li>
+    </ul>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .frm-input::placeholder {
+            color: palevioletred;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    
+    <input class="frm-input" type="email" placeholder="Enter your email">
+
+
+</body>
+</html>
