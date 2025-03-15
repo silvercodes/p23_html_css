@@ -30,7 +30,7 @@
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,26 +41,34 @@
 
     <style>
         /* Определённые */
-        p {
+        /* p {
             font-size: 16px;
             line-height: 2em;
             padding: calc(2em + 20px);
             background-image: url("pic.jpg");
             width: 50%;
             /* ... */
-        }
+        /* } */
 
         /* Вычисленные */
-        p {
+        /* p {
             font-size: 16px;
             line-height: 32px;                                              <---
             padding: 52px;                                                  <---
             background-image: url("http://myapp.com/documets/pic.jpg");     <---
             width: 50%; 
             /* ... */
+        /* }  */
+
+
+        p {
+            font-size: 20px;
+            color: black;
+            transition: color 0.5s ease;
         }
-
-
+        p:hover {
+            color: red;
+        }
 
 
 
@@ -73,4 +81,221 @@
     <p style="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam facilis, reprehenderit eaque saepe exercitationem dicta asperiores. Veritatis officia nulla iusto voluptatem, inventore commodi optio nemo incidunt hic explicabo autem id.</p>
 
 </body>
+</html> -->
+
+
+
+
+<!-- ФИЛЬТРАЦИЯ -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span {
+            /* name: Vasia;             отброшено!!!*/
+            color: blue;
+            font-size: 10px;
+        }
+        .text {
+            padding: 10px;
+            font-size: 20px;
+        }
+        div>span {
+            color: red;
+        }
+        @media (max-with: 300px) {
+            /* div {                    отброшено!!!
+                width: 250px;
+            } */
+        }
+        /* .wrapper {                   отброшено!!!
+            color: green;
+        } */
+
+
+        /*
+            Отфильтрованные стили для <span> (Объявленные значения)
+            color: 
+                blue,       23      1       101         0
+                red         23      1       101         1
+            font-size:
+                10px,
+                20px,
+            padding-top
+                10px;
+            padding-right
+                10px;
+            padding-bottom
+                10px;
+            padding-left
+                10px;
+        
+        
+        */
+    </style>
+
+ </head>
+ <body>
+    
+    <div>
+        <span class="text">Lorem.</span>
+    </div>
+
+ </body>
+ </html> -->
+
+
+
+ <!-- КАСКАДИРОВАНИЕ -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            text-decoration: none;
+            color: red !important;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <a href="https://google.com/test">GOOGLE</a>
+
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type="file"] {
+            width: 400px;
+            border: 3px solid red;
+            text-align: right !important;
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <input type="file">
+
+</body>
+</html> -->
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            color: darkblue;
+        }
+        p {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <p style="color:green">Lorem, ipsum dolor.</p>
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .one {
+            color: red;
+        }
+        .two {
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <p class="one two">Lorem ipsum dolor sit amet.</p>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- ИСТОЧНИК И ВАЖНОСТЬ -->
+
+<!-- 1 - 3 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            text-decoration: none;
+        }
+        button {
+            border: 3px solid red;
+            background-color: goldenrod;
+        }
+        h1 {
+            font-size: 1em;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <a href="#">LINK</a>
+    <button>BUTTON</button>
+    <h1>H1</h1>
+
+</body>
 </html>
+
+
+
+
+
+
+
