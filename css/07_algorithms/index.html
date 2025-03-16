@@ -263,7 +263,7 @@
 
 <!-- 1 - 3 -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -291,11 +291,277 @@
     <h1>H1</h1>
 
 </body>
+</html> -->
+
+
+
+
+<!-- 3 - 4 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            font-size: 30px;
+            /* animation-name: grow;
+            animation-duration: 3s; */
+            /* animation-iteration-count: infinite; */
+        }
+        a:hover {
+            animation-name: grow;
+            animation-duration: 10s;
+        }
+        #link {
+            font-size: 50px;
+        }
+        @keyframes grow {
+            to {
+                font-size: 10px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <a id="link" href="#">LINK</a>
+
+</body>
+</html> -->
+
+
+
+
+<!-- 4 - 5 -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a {
+            font-size: 30px;
+            animation-name: grow;
+            animation-duration: 3s;
+            /* animation-iteration-count: infinite; */
+        }
+
+        #link {
+            font-size: 50px !important;
+        }
+        @keyframes grow {
+            to {
+                font-size: 100px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <a id="link" href="#">LINK</a>
+
+</body>
+</html> -->
+
+
+
+
+<!-- 8 - ... -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .warning {
+            transition: all 3s;
+        }
+        .warning.hover {
+            background-color: white;
+            color: black;
+        }
+        .warning:not(:hover) {
+            background-color: black !important;
+            color: white !important;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <p class="warning">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, iure.</p>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* * {}
+
+        p {}
+
+        li::before {}
+
+        .warning {}
+
+        [type="text"] {}
+
+        .link:hover {}
+
+        #unique {} */
+
+
+
+        * {}                        0   0   0       000
+        li {}                       0   0   1       001
+        ul > li {}                  0   0   2       002
+        input[type="text"]          0   1   1       011
+        p + .warning                0   1   1       011
+        .warning:not(:first-child)  0   2   0       020
+        #link                       1   0   0       100
+        #link::before               1   0   1       101
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *.solid {
+            border-style: solid;
+        }
+        #cell {
+            border-style: dotted;
+        }
+        table>tr>td {
+            border-style: inset;
+        }
+
+        /*
+                *.solid         0   1   0
+                #cell           1   0   0
+                table>tr>td     0   0   3
+        */
+
+    </style>
+
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <td class="solid" id="cell">Lorem, ipsum.</td>
+        </tr>
+    </table>
+
+
+</body>
+</html> -->
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /* #link {
+            font-size: 100px;
+        } */
+
+        a {
+            font-size: 100px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    
+    <a href="#" id="link" style="font-size: 20px;">
+        LINK
+    </a>
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        /*
+            width="100"             --->        width: 100px
+            rows="5"                --->        height: calc(5 * 1em)
+        */
+
+        img {
+            width: 250px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <img src="img_10.jpg" alt="" width="150">
+
+</body>
 </html>
-
-
-
-
-
 
 
