@@ -1,0 +1,517 @@
+<!-- 
+static
+relative
+absolute
+fixed
+sticky 
+-->
+
+
+
+<!-- STATIC -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .box-1 {
+            background-color: tomato;
+        }
+        .box-2 {
+            background-color: green;
+        }
+        .box-3 {
+            background-color: blueviolet;
+            position: relative;
+            bottom: 20px;
+        }
+        .box-3:hover {
+            position: static;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="box box-1"></div>
+    <div class="box box-2"></div>
+    <div class="box box-3"></div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- RELATIVE -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            font-size: 2em;
+            background-color: blueviolet;
+            color: white;
+            padding: 0 1rem;
+            overflow: hidden;
+        }
+        span {
+            position: relative;
+            top: 0.1em;
+        }
+    </style>
+
+</head>
+<body>
+    <h1><span>Lorem ipsum dolor sit amet.</span></h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, maiores!</p>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            box-shadow: 5px 5px 0 black;
+
+            position: relative;
+            left: 0;
+            top: 0;
+            transition: 0.3s;
+        }
+        button:hover {
+            left: 5px;
+            top: 5px;
+            box-shadow: 0 0 0 #000;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button>BUTTON</button>
+
+</body>
+</html> -->
+
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img {
+            border: 2px solid tomato;
+            position: relative;
+            width: 150px;
+            transition: 0.3s;
+        }
+        img:hover {
+            z-index: 10;
+            transform: scale(1.2);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <img src="img_10.jpg" alt="">
+    <img src="img_10.jpg" alt="">
+    <img src="img_10.jpg" alt="">
+
+</body>
+</html> -->
+
+
+
+
+<!-- ABSOLUTE -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            color: white;
+            font: 600 20px/35px 'Roboto', Sans-Serif;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        div {
+            border-radius: 6px;
+        }
+
+        .set {
+            background-color: lightgray;
+            position: relative;
+            height: 400px;
+        }
+
+        .box {
+            position: absolute;
+            box-sizing: border-box;
+            border: 1px solid red;
+            background: green;
+            height: 120px;
+            width: 120px;
+            text-align: center;
+        }
+
+        .box-1 {
+            top: 10%;
+            left: 5%;
+        }
+        .box-2 {
+            top: 0;
+            right: -80px;
+        }
+        .box-3 {
+            bottom: -20px;
+            right: 40px;
+        }
+        .box-4 {
+            bottom: 0;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h2>Absolute</h2>
+    <div class="set">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+        <div class="box box-3">Box 3</div>
+        <div class="box box-4">Box 4</div>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .overlay {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+        }
+        .dialog {
+            position: absolute;
+            background: #fff;
+            width: 250px;
+            height: 200px;
+            padding: 20px;
+            left: 0;
+            right: 0;
+            margin: 100px auto 0;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="overlay"></div>
+    <div class="dialog">
+        <h2>This is dialog</h2>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati itaque autem enim quas alias consequatur? Itaque atque dolor commodi aut ex molestiae aliquam, officia qui repellat laudantium, minima error odit deserunt aperiam doloremque provident non eaque modi explicabo in ipsa porro quos. Placeat a quos illum necessitatibus quis rerum eius!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam pariatur animi non asperiores quos ipsam explicabo? Sapiente, magnam corrupti eveniet id quas repellendus quam, quia commodi qui debitis consequatur explicabo placeat repudiandae, assumenda vero facere dolore soluta minima! Quaerat mollitia dolorem quibusdam temporibus a molestiae. Reiciendis consectetur nihil similique ex.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus numquam voluptates eaque deserunt exercitationem pariatur, unde quibusdam aspernatur repellat dicta similique sequi vel illo beatae illum ratione libero dolor velit tenetur autem debitis ut placeat! Adipisci voluptate qui soluta sunt corporis quos voluptatem iure error quae voluptatum. Sapiente, hic nihil!</p>
+
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .block-1 {
+            position: relative;
+            background: lightseagreen;
+            height: 200px;
+            padding: 20px;
+            border: 2px solid red;
+        }
+        .block-2 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            background: black;
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="block-1">
+        <div class="block-2"></div>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        figure {
+            display: inline-block;
+            position: relative;
+            margin: 10;
+            border: 2px solid red;
+        }
+        .info {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            min-width: 60px;
+            background-color: cadetblue;
+            color: #fff;
+            text-align: center;
+            padding: 5px 10px;
+            border: 2px solid #fff;
+        }
+        .month {
+            font-size: 2rem;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <figure>
+        <img src="img_10.jpg" alt="Girl">
+        <div class="info">
+            <div class="date">22</div>
+            <div class="month">МАР</div>
+        </div>
+    </figure>
+
+    <figure>
+        <img src="img_10.jpg" alt="Girl">
+        <div class="info">
+            <div class="date">22</div>
+            <div class="month">МАР</div>
+        </div>
+    </figure>
+
+    <figure>
+        <img src="img_10.jpg" alt="Girl">
+        <div class="info">
+            <div class="date">22</div>
+            <div class="month">МАР</div>
+        </div>
+    </figure>
+
+    <figure>
+        <img src="img_10.jpg" alt="Girl">
+        <div class="info">
+            <div class="date">22</div>
+            <div class="month">МАР</div>
+        </div>
+    </figure>
+
+</body>
+</html> -->
+
+
+
+
+<!-- FIXED -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background: lightseagreen;
+            color: #fff;
+        }
+        header > h1 {
+            margin: 0;
+            text-align: center;
+        }
+        main {
+            min-height: 1000px;
+            margin-top: 70px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Site TITLE</h1>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nisi sint, neque iure nihil voluptate voluptas error mollitia repellat quia quam, saepe ullam et iusto magnam consequatur suscipit delectus! Aliquam?</p>
+    </main>
+
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            min-height: 1000px;
+        }
+        .dialog {
+            position: fixed;
+            padding: 10px;
+            background: lightslategray;
+            color: #fff;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="dialog">Lorem ipsum dolor sit amet.</div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- STICKY -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            min-height: 1000px;
+        }
+
+        header,
+        nav {
+            color: #fff;
+            padding: 10px;
+        }
+
+        header {
+            background-color: blueviolet;
+        }
+        nav {
+            background-color: brown;
+            position: sticky;
+            top: 0;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>HEADER</header>
+    <nav>MENU</nav>
+
+</body>
+</html> -->
+
+
+
+

@@ -1,0 +1,273 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* .btn {
+            background-color: black;
+            transition: 
+                background-color 1s, 
+                transform 0.5s;
+            transition!!!: all 0.5s;
+        }
+
+        .btn:hover {
+            background-color: red;
+            transform: scale(110%);
+        } */
+
+
+        /* .btn {
+            background-color: black;
+            transition: 
+                background-color 1s, 
+                transform 0.5s;
+        }
+
+        .btn:hover {
+            background-color: red;
+            transform: scale(110%);
+            transition:
+                background-color 3s, 
+                transform 2.5s;
+        } */
+
+
+    </style>
+
+</head>
+<body>
+    
+    <button class="btn">BUTTON</button>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            position: relative;
+        }
+        .tooltip {
+            position: absolute;
+            visibility: hidden;
+            background-color: lightcoral;
+            opacity: 0;
+            transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+            transition-delay: 0.5s;
+        }
+
+        .slider .tooltip {
+            transform: translateY(20px);
+        }
+
+        .target:hover + .tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+        .slider .target:hover + .tooltip {
+            transform: translate(0);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <h2>Fade</h2>
+        <div class="container">
+            <span class="target">Lorem ipsum dolor sit amet.</span>
+            <div class="tooltip">Подсказка</div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <h2>Slide</h2>
+        <div class="container">
+            <span class="target">Lorem ipsum dolor sit amet.</span>
+            <div class="tooltip">Подсказка</div>
+        </div>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            border: 0;
+            background: tomato;
+            color: #fff;
+            border-radius: 6px;
+            margin: 0;
+            padding: 10px 20px;
+            box-shadow: 0 5px 0 lightslategray;
+            transition: all 0.1s linear;
+        }
+        button:active {
+            box-shadow: 0 2px 0 lightslategray;
+            transform: translateY(3px);
+        }
+    </style>
+
+</head>
+<body>
+    
+    <button>MY BUTTON</button>
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            animation-name: ;
+            animation-duration: ;
+            animation-timing-function: ;
+            animation-delay: ;
+            animation-iteration-count: ;
+            animation-direction: ;
+            animation-fill-mode: ;
+
+            animation: ;
+        } 
+
+         @keyframes anim {
+            0% {
+                bottom: 0;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            }
+            100% {
+                bottom: 50px;
+                box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        button {
+            animation: anim 0.5s linear 0s infinite alternate both;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <button>DOWNLOAD</button>
+
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+                top: 0;
+                background-color: blue;
+            }
+
+            50% {
+                left: 150px;
+                top: 100px;
+                background: black;
+            }
+
+            100% {
+                left: 300px;
+                top: 0;
+                background: violet;
+            }
+        }
+
+        .wrapper {
+            background: lightgreen;
+            border-radius: 6px;
+            height: 300px;
+            position: relative;
+        }
+        .ball {
+            background: red;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+        }
+
+        .wrapper:hover > .ball {
+            /* animation: move 2s linear; */
+
+            animation-name: move;
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier( 0.85, 0.19, 0.09, 0.7 );
+            animation-delay: 0;
+
+            /* animation-iteration-count: infinite;
+            animation-direction: alternate; */
+
+            animation-fill-mode: both;
+        }
+        .wrapper:active > .ball {
+            animation-play-state: paused;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="ball"></div>
+    </div>
+
+</body>
+</html>
+

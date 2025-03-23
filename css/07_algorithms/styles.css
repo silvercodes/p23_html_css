@@ -1,0 +1,12 @@
+@import "extra.css";
+
+p {
+    margin: 10px;
+    background-color: tomato;
+}
+
+p {
+    background-color: blue;
+}
+
+
