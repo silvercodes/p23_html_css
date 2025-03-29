@@ -1,0 +1,435 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper {
+            background-color: lightslategray;
+            height: 300px;
+            width: 500px;
+            margin: 0 auto;
+
+            display: flex;
+            /* display: inline-flex; */
+
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            justify-content: flex-start;
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            /* align-items: flex-end;*/
+            /* align-items: center; */
+            /* align-items: baseline;  */
+
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+
+            /* align-content: stretch; */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+
+            /* gap
+            row-gap
+            column-gap */
+
+            gap: 20px;
+            row-gap: 30px;
+
+
+        }
+
+        .item {
+            box-sizing: border-box;
+            background-color: brown;
+            color: white;
+            border: 1px solid white;
+            font-size: 2rem;
+            /* height: 100px; */
+            width: 100px;
+
+
+            flex-grow: 0;
+            /* + */
+            flex-shrink: 1;
+            /* + */
+            flex-basis: 100px;
+            /* = */
+            flex: 0 1 100px;
+        }
+
+        .item-2 {
+            order: 1;
+
+            align-self: flex-start;
+        }
+        .item-1 {
+            order: 2
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+    </div>
+
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper {
+            display: flex;
+            height: 300px;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            box-sizing: border-box;
+            border: 1px solid black;
+            width: 100px;
+            height: 50px;
+            background-color: blueviolet;
+            text-align: center;
+            line-height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="item">Elemet_1</div>
+        <div class="item">Elemet_2</div>
+        <div class="item">Elemet_3</div>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+        .menu a {
+            text-decoration: none;
+            color: darkred;
+            padding: 15px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <nav class="menu">
+        <a href="">Главная</a>
+        <a href="">О нас</a>
+        <a href="">Услуги</a>
+        <a href="">Контакты</a>
+    </nav>
+
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+            display: flex;
+            align-items: flex-start;
+            border: 1px solid red;
+            padding: 10px;
+            max-width: 500px;
+        }
+
+        .card-image {
+            width: 150px;
+            margin-right: 20px;
+        }
+
+        .card-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .add-to-card {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: darkorange;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="card">
+        <img class="card-image" src="img_10.jpg" alt="girl">
+        <div class="card-info">
+            <h3 class="card-title">Название товара</h3>
+            <p class="card-description">Описание товара</p>
+            <button class="add-to-card">Добавить в корзиру</button>
+        </div>
+    </div>
+
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            background-color: lightsalmon;
+        }
+
+        .child {
+            display: flex;
+            gap: 10px;
+        }
+        .item {
+            background-color: brown;
+            color: #fff;
+            font-size: 2rem;
+            padding: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="child">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+        </div>
+        <div class="child">
+            <div class="item">4</div>
+        </div>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .nav {
+            border: 1px solid black;
+            background-color: lightsalmon;
+
+            display: flex;
+            justify-content: end;
+        }
+
+        .nav > a {
+            background-color: brown;
+            box-sizing: border-box;
+            border: 1px solid yellowgreen;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .nav > a:hover {
+            background-color: darkorange;
+        }
+
+        @media screen and (max-width: 800px) {
+            .nav > a {
+                flex-grow: 1;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="nav">
+        <a href="">Menu 1</a>
+        <a href="">Menu 2</a>
+        <a href="">Menu 3</a>
+        <a href="">Menu 4</a>
+        <a href="">Menu 5</a>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            display: flex;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .item {
+            height: 300px;
+            flex-basis: 20%;
+            box-shadow: 0 0 40px #000;
+
+            transition: 300ms;
+        }
+
+        .item:hover {
+            flex-basis: 40%;
+            flex-shrink: 0;
+        }
+
+        .item:nth-child(1) {
+            background: url('img_10.jpg') no-repeat;
+        }
+
+        .item:nth-child(2) {
+            background: url('img_10.jpg') no-repeat;
+        }
+
+        .item:nth-child(3) {
+            background: url('img_10.jpg') no-repeat;
+        }
+
+        .item:nth-child(4) {
+            background: url('img_10.jpg') no-repeat;
+        }
+
+        .item:nth-child(5) {
+            background: url('img_10.jpg') no-repeat;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+
+</body>
+</html>
