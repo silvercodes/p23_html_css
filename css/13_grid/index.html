@@ -1,0 +1,320 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid {
+            display: grid;
+            /* grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-gap: 2vw; */
+        }
+
+        .grid > div {
+            box-sizing: border-box;
+            border: 1px solid black;
+            font-size: 5vw;
+            padding: 0.5em;
+            background-color: blueviolet;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                "nav header header"
+                "nav article ads"
+                "footer footer footer";
+            grid-template-rows: 60px 1fr 60px;
+            grid-template-columns: 20% 1fr 15%;
+            grid-gap: 10px;
+
+            height: 100vh;
+            margin: 0;
+        }
+
+        header, article, nav, div, footer {
+            padding: 20px;
+            background: lightseagreen;
+        }
+
+        header {
+            grid-area: header;
+        }
+        article {
+            grid-area: article;
+        }
+        nav {
+            grid-area: nav;
+        }
+        .ads {
+            grid-area: ads;
+        }
+        footer {
+            grid-area: footer;
+        }
+    </style>
+
+</head>
+<body>
+    <header>ШАПКА</header>
+    <article>КОНТЕНТ</article>
+    <nav>НАВИГАЦИЯ</nav>
+    <div class="ads">РЕКЛАМА</div>
+    <footer>ПОДВАЛ</footer>
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "nav article ads"
+                "footer footer footer";
+            grid-template-rows: 60px 1fr 60px;
+            grid-template-columns: 20% 1fr 15%;
+            grid-gap: 10px;
+
+            height: 100vh;
+            margin: 0;
+        }
+
+        header, article, nav, div, footer {
+            padding: 20px;
+            background: lightseagreen;
+        }
+
+        header {
+            grid-area: header;
+        }
+        article {
+            grid-area: article;
+        }
+        nav {
+            grid-area: nav;
+        }
+        .ads {
+            grid-area: ads;
+        }
+        footer {
+            grid-area: footer;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            body {
+                grid-template-areas: 
+                "header"
+                "article"
+                "ads"
+                "nav"
+                "footer";
+
+                grid-template-rows: 60px 1fr 70px 1fr 70px;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>ШАПКА</header>
+    <article>КОНТЕНТ</article>
+    <nav>НАВИГАЦИЯ</nav>
+    <div class="ads">РЕКЛАМА</div>
+    <footer>ПОДВАЛ</footer>
+
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-rows: 60px 60px;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+
+            grid-auto-flow: column;
+            grid-auto-rows: 60px;
+            grid-auto-columns: 1fr;
+        }
+
+        .grid > div {
+            border: 1px solid black;
+            padding: 0.5em;
+            background-color: blueviolet;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+
+
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-rows: 50px 1fr 80px;
+            grid-template-columns: 120px 1fr 80px;
+            gap: 10px;
+            height: 100vh;
+        }
+        .grid > div {
+            background-color: blueviolet;
+        }
+
+        .item1 {
+            grid-row-start: 1;
+            grid-column-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 2;
+        }
+
+        .item2 {
+            grid-row-start: 3;
+            grid-column-start: 2;
+            grid-row-end: 4;
+            grid-column-end: 4;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="grid">
+        <div class="item1"></div>
+        <div class="item2"></div>
+    </div>
+
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .grid {
+            display: grid;
+            grid-template-rows: [row1-start] 50px 1fr 80px ;
+            grid-template-columns: 120px 1fr 80px;
+            gap: 10px;
+            height: 100vh;
+        }
+        .grid > div {
+            background-color: blueviolet;
+        }
+
+        .item1 {
+            grid-row-start: row1-start;
+            grid-column-start: 1;
+            grid-row-end: 2;
+            grid-column-end: 2;
+        }
+
+        .item2 {
+            grid-row-start: 3;
+            grid-column-start: 2;
+            grid-row-end: 4;
+            grid-column-end: 4;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="grid">
+        <div class="item1"></div>
+        <div class="item2"></div>
+    </div>
+
+</body>
+</html>
